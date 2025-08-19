@@ -1,0 +1,494 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.horarios-requisitos-imt h2,
+.profesores-imt h2,
+.talleres-pasados-imt h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    color: #f0d000;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1em;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+}
+
+/* --- Sección 0: Banner Hero --- */
+.hero-imt-mobile {
+    display: none;
+}
+
+.hero-imt-desktop {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Sección 1: Texto Introductorio --- */
+.sobre-imt {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #000;
+}
+
+.sobre-imt h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 0.8em;
+    letter-spacing: -3px;
+    margin-bottom: 2rem;
+}
+
+.sobre-imt .amarillo-imt {
+    display: block;
+    color: #f0d000;
+}
+
+.imt-content-texto p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.imt-boton-amarillo {
+    margin-top: 2rem;
+}
+
+.imt-boton-amarillo a {
+    background-color: #f0d000;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.imt-boton-amarillo a:hover {
+    color: #f6f6f1;
+    background-color: #1d1e1d;
+}
+
+/* --- Sección 2: Experimenta IMT --- */
+.imt-sm-section {
+    padding: 2em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.imt-sm-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8em;
+    flex-wrap: wrap;
+}
+
+.imt-sm-texto {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    order: 0;
+    text-align: left;
+}
+
+.imt-sm-texto h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3.2em;
+    font-weight: 900;
+    line-height: 1em;
+    letter-spacing: -3px;
+    margin-bottom: 0;
+    color: #f0d000;
+}
+
+/* Cambié esto */
+.imt-sm-texto h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1em;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+.imt-sm-texto p {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.imt-sm-img {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    min-width: 360px;
+    display: block;
+}
+
+.imt-img-hamilton {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.triangulo-imt {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 200px); /* entra dentro del círculo */
+    width: 100vw;
+    height: 100%;
+    background: #f0d000;
+    clip-path: polygon(0% 2%, 100% 0%, 100% 10%, 0% 98%);
+}
+
+/* --- Sección 3: Lin Manuel Miranda IMT --- */
+.triangulo-imt-lin {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 200px); /* entra dentro del círculo */
+    width: 100vw;
+    height: 100%;
+    background: #f0d000;
+    clip-path: polygon(100% 2%, 0% 0%, 0% 10%, 100% 98%);
+}
+
+
+/* Sección 4: Horarios y Requisitos */
+.horarios-requisitos-imt {
+    padding: 1rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.horarios-requisitos-imt p,
+.horarios-requisitos-imt li {
+    font-size: 1.6em;
+    line-height: 1.8;
+}
+
+.contenido-imt {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.texto-hr-imt  {
+    font-family: 'Quicksand', sans-serif;
+    flex: 1;
+}
+
+.imagenes-hr-imt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+.imagenes-hr-imt img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 3 / 2;
+}
+
+/* Sección 5: Equipo docente IMT */
+.profesores-imt {
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.profesores-imt-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.profesores-imt-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profesores-imt-item img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+}
+
+.profesores-imt-item h3 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.profesores-imt-item p {
+    font-size: 0.95em;
+    margin-top: 0.5rem;
+    max-width: 90%;
+}
+
+/* Sección 6: Talleres pasados IMT */
+
+.talleres-pasados-imt {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.carrusel-talleres-imt-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+    scrollbar-width: none;
+
+}
+
+.carrusel-talleres-imt-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carrusel-talleres-imt-item {
+    flex: 0 0 calc(50% - 0.5rem);
+    scroll-snap-align: start;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+.carrusel-talleres-imt-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.carrusel-talleres-imt-item h3 {
+    color: #f0d000;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.carrusel-talleres-imt-item h4 {
+    margin: 0 auto;
+}
+
+/* Flechas carrusel */
+.carrusel-flechas-imt {
+    position: relative;;
+}
+
+.carrusel-flecha-imt {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: #f0d000;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrusel-flecha-imt.izquierda {
+    left: -50px;
+}
+
+.carrusel-flecha-imt.derecha {
+    right: -50px;
+}
+
+/* Puntos indicadores */
+.carrusel-indicadores-imt {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+}
+
+.carrusel-indicador-imt {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrusel-indicador-imt.activo {
+    background-color: #f0d000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Responsive --- */
+@media screen and (max-width: 768px) {
+    /* --- Sección 0: Banner Hero --- */
+    .hero-imt-desktop {
+        display: none;
+    }
+
+    .hero-imt-mobile {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* --- Sección 1: Texto Introductorio --- */
+
+
+    /* --- Sección 2: Experimenta IMT --- */
+    .imt-sm-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .imt-sm-img {
+        order: -1;
+        width: 340px;
+        height: 340px;
+    }
+
+    .imt-sm-texto {
+        text-align: left;
+    }
+    
+    .imt-sm-texto h2 {
+        font-size: 3.2em;
+        text-align: left;
+    }
+    
+    .imt-sm-texto p {
+        text-align: left;
+    }
+
+
+        /* Sección 4: Horarios y Requisitos IMT */
+    .contenido-imt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-hr-imt,
+    .imagenes-hr-imt {
+        width: 100%;
+    }
+
+    .horarios-requisitos-imt p,
+    .horarios-requisitos-imt li {
+        font-size: 1.2em;
+    }
+
+    /* Sección 5: Equipo docente IMT */
+    .profesores-imt-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sección 6: Talleres pasados IMT */
+    .carrusel-flecha-imt {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Animaciones sección 1 IMT */
+.animar-arriba-imt, .animar-izquierda-imt, .animar-derecha-imt, .animar-abajo-imt {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animar-arriba-imt {
+    transform: translateY(-40px);
+}
+
+.animar-izquierda-imt {
+    transform: translateX(-40px);
+}
+
+.animar-derecha-imt {
+    transform: translateX(40px);
+}
+
+.animar-abajo-imt {
+    transform: translateY(40px);
+}
+
+.mostrar-imt {
+    opacity: 1;
+    transform: translate(0, 0);
+}
