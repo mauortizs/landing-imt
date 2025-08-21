@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.appendChild(indicadorContainer);
 
 const calcularPaginas = () => {
-    return items.length;
+    const itemsPorPagina = Math.floor(carrusel.clientWidth / itemWidth);
+    return Math.ceil(items.length / itemsPorPagina);
 };
 
     let totalPaginas = calcularPaginas();
