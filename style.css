@@ -196,6 +196,11 @@ html, body {
     flex: 1;
 }
 
+.texto-hr-imt ul {
+    padding-left: 1.25rem;
+    list-style-position: outside;
+}
+
 .imagenes-hr-imt {
     flex: 1;
     display: flex;
@@ -437,6 +442,18 @@ html, body {
     .texto-hr-imt,
     .imagenes-hr-imt {
         width: 100%;
+    }
+
+    .texto-hr-imt {
+        padding: 0 1.25rem;
+    }
+
+    .texto-hr-imt ul {
+        padding-left: 1.25rem;
+    }
+
+    .texto-hr-imt .imt-boton-amarillo {
+        text-align: center;
     }
 
     .horarios-requisitos-imt p,
